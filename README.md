@@ -24,12 +24,15 @@ The latest stable distributions are summarised below.  The default OCaml version
 Distribution | Available Switches | Command
 ------------ | ------------------ | -------
 Alpine | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine`
+Alpine armhf | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-armhf`
+Alpine armhf | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-armhf`
 CentOS | 4.01.0 &#127362;, 4.02.3 &#127347; | `docker pull ocaml/opam:centos`
 Debian | 4.01.0 &#127362;, 4.02.3 &#127347; | `docker pull ocaml/opam:debian`
 Fedora | 4.02.2 &#127362;, 4.02.3 &#127347; | `docker pull ocaml/opam:fedora`
+OpenSUSE | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:opensuse`
 OracleLinux | 4.02.3 &#127347; | `docker pull ocaml/opam:oraclelinux`
 Raspbian | 4.01.0 &#127362;, 4.02.3 &#127347; | `docker pull ocaml/opam:raspbian`
-Ubuntu | 4.01.0 &#127362;, 4.02.3 &#127347; | `docker pull ocaml/opam:ubuntu`
+Ubuntu | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:ubuntu`
 
 There are also individual containers available for each combination
    of an OS distribution and an OCaml revision. These should be useful for
@@ -44,6 +47,31 @@ Alpine 3.3 | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine-3.3_ocaml-4.01.0`
 Alpine 3.3 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-3.3_ocaml-4.02.3`
 Alpine 3.3 | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine-3.3_ocaml-4.03.0`
 Alpine 3.3 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine-3.3_ocaml-4.03.0_flambda`
+Alpine 3.4 | 4.00.1 &#127347; | `docker pull ocaml/opam:alpine-3.4_ocaml-4.00.1`
+Alpine 3.4 | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine-3.4_ocaml-4.01.0`
+Alpine 3.4 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-3.4_ocaml-4.02.3`
+Alpine 3.4 | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine-3.4_ocaml-4.03.0`
+Alpine 3.4 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine-3.4_ocaml-4.03.0_flambda`
+Alpine Stable (3.4) | 4.00.1 &#127347; | `docker pull ocaml/opam:alpine_ocaml-4.00.1`
+Alpine Stable (3.4) | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine_ocaml-4.01.0`
+Alpine Stable (3.4) | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine_ocaml-4.02.3`
+Alpine Stable (3.4) | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine_ocaml-4.03.0`
+Alpine Stable (3.4) | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine_ocaml-4.03.0_flambda`
+Alpine armhf 3.4 | 4.00.1 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.00.1`
+Alpine armhf 3.4 | 4.00.1 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.00.1`
+Alpine armhf 3.4 | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.01.0`
+Alpine armhf 3.4 | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.01.0`
+Alpine armhf 3.4 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.02.3`
+Alpine armhf 3.4 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.02.3`
+Alpine armhf 3.4 | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.03.0`
+Alpine armhf 3.4 | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.03.0`
+Alpine armhf 3.4 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.03.0_flambda`
+Alpine armhf 3.4 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine-armhf-3.4_ocaml-4.03.0_flambda`
+Alpine armhf Stable (3.4) | 4.00.1 &#127347; | `docker pull ocaml/opam:alpine-armhf_ocaml-4.00.1`
+Alpine armhf Stable (3.4) | 4.01.0 &#127347; | `docker pull ocaml/opam:alpine-armhf_ocaml-4.01.0`
+Alpine armhf Stable (3.4) | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:alpine-armhf_ocaml-4.02.3`
+Alpine armhf Stable (3.4) | 4.03.0 &#127347; | `docker pull ocaml/opam:alpine-armhf_ocaml-4.03.0`
+Alpine armhf Stable (3.4) | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:alpine-armhf_ocaml-4.03.0_flambda`
 CentOS 6 | 4.00.1 &#127347; | `docker pull ocaml/opam:centos-6_ocaml-4.00.1`
 CentOS 6 | 4.01.0 &#127347; | `docker pull ocaml/opam:centos-6_ocaml-4.01.0`
 CentOS 6 | 4.02.3 &#127347; | `docker pull ocaml/opam:centos-6_ocaml-4.02.3`
@@ -94,6 +122,11 @@ Fedora 23 | 4.01.0 &#127347; | `docker pull ocaml/opam:fedora-23_ocaml-4.01.0`
 Fedora 23 | 4.02.3 &#127347; | `docker pull ocaml/opam:fedora-23_ocaml-4.02.3`
 Fedora 23 | 4.03.0 &#127347; | `docker pull ocaml/opam:fedora-23_ocaml-4.03.0`
 Fedora 23 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:fedora-23_ocaml-4.03.0_flambda`
+OpenSUSE 42.1 | 4.00.1 &#127347; | `docker pull ocaml/opam:opensuse-42.1_ocaml-4.00.1`
+OpenSUSE 42.1 | 4.01.0 &#127347; | `docker pull ocaml/opam:opensuse-42.1_ocaml-4.01.0`
+OpenSUSE 42.1 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:opensuse-42.1_ocaml-4.02.3`
+OpenSUSE 42.1 | 4.03.0 &#127347; | `docker pull ocaml/opam:opensuse-42.1_ocaml-4.03.0`
+OpenSUSE 42.1 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:opensuse-42.1_ocaml-4.03.0_flambda`
 OracleLinux 7 | 4.00.1 &#127347; | `docker pull ocaml/opam:oraclelinux-7_ocaml-4.00.1`
 OracleLinux 7 | 4.01.0 &#127347; | `docker pull ocaml/opam:oraclelinux-7_ocaml-4.01.0`
 OracleLinux 7 | 4.02.3 &#127347; | `docker pull ocaml/opam:oraclelinux-7_ocaml-4.02.3`
@@ -114,21 +147,11 @@ Ubuntu 14.04 | 4.01.0 &#127362;&#127347; | `docker pull ocaml/opam:ubuntu-14.04_
 Ubuntu 14.04 | 4.02.3 &#127347; | `docker pull ocaml/opam:ubuntu-14.04_ocaml-4.02.3`
 Ubuntu 14.04 | 4.03.0 &#127347; | `docker pull ocaml/opam:ubuntu-14.04_ocaml-4.03.0`
 Ubuntu 14.04 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:ubuntu-14.04_ocaml-4.03.0_flambda`
-Ubuntu 15.10 | 4.00.1 &#127347; | `docker pull ocaml/opam:ubuntu-15.10_ocaml-4.00.1`
-Ubuntu 15.10 | 4.01.0 &#127362;&#127347; | `docker pull ocaml/opam:ubuntu-15.10_ocaml-4.01.0`
-Ubuntu 15.10 | 4.02.3 &#127347; | `docker pull ocaml/opam:ubuntu-15.10_ocaml-4.02.3`
-Ubuntu 15.10 | 4.03.0 &#127347; | `docker pull ocaml/opam:ubuntu-15.10_ocaml-4.03.0`
-Ubuntu 15.10 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:ubuntu-15.10_ocaml-4.03.0_flambda`
 Ubuntu 16.04 | 4.00.1 &#127347; | `docker pull ocaml/opam:ubuntu-16.04_ocaml-4.00.1`
 Ubuntu 16.04 | 4.01.0 &#127347; | `docker pull ocaml/opam:ubuntu-16.04_ocaml-4.01.0`
 Ubuntu 16.04 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:ubuntu-16.04_ocaml-4.02.3`
 Ubuntu 16.04 | 4.03.0 &#127347; | `docker pull ocaml/opam:ubuntu-16.04_ocaml-4.03.0`
 Ubuntu 16.04 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:ubuntu-16.04_ocaml-4.03.0_flambda`
-Ubuntu 16.10 | 4.00.1 &#127347; | `docker pull ocaml/opam:ubuntu-16.10_ocaml-4.00.1`
-Ubuntu 16.10 | 4.01.0 &#127347; | `docker pull ocaml/opam:ubuntu-16.10_ocaml-4.01.0`
-Ubuntu 16.10 | 4.02.3 &#127362;&#127347; | `docker pull ocaml/opam:ubuntu-16.10_ocaml-4.02.3`
-Ubuntu 16.10 | 4.03.0 &#127347; | `docker pull ocaml/opam:ubuntu-16.10_ocaml-4.03.0`
-Ubuntu 16.10 | 4.03.0+flambda &#127347; | `docker pull ocaml/opam:ubuntu-16.10_ocaml-4.03.0_flambda`
 
 
 Using the Containers
