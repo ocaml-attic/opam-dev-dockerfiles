@@ -24,7 +24,6 @@ RUN mkdir .ssh && \
   sudo -u opam sh -c "cd /home/opam/opam-repository && opam admin upgrade-format && git checkout -b v2 && git add . && git commit -a -m 'opam admin upgrade-format'" && \
   sudo -u opam sh -c "opam init -a -y --comp 4.02.3 /home/opam/opam-repository" && \
   sudo -u opam sh -c "opam install -y camlp4" && \
-  sudo -u opam sh -c "opam pin add depext https://github.com/avsm/opam-depext.git#env-vars" && \
   sudo -u opam sh -c "opam install -y depext travis-opam"
 ENTRYPOINT [ "opam", "config", "exec", "--" ]
 CMD [ "bash" ]
