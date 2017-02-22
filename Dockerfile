@@ -21,7 +21,7 @@ RUN mkdir .ssh && \
   git config --global user.email "docker@example.com" && \
   git config --global user.name "Docker CI" && \
   sudo -u opam sh -c "git clone -b master git://github.com/ocaml/opam-repository" && \
-  sudo -u opam sh -c "cd /home/opam/opam-repository && opam admin upgrade-format && git checkout -b v2 && git add . && git commit -a -m 'opam admin upgrade-format'" && \
+  sudo -u opam sh -c "cd /home/opam/opam-repository && opam admin upgrade && git checkout -b v2 && git add . && git commit -a -m 'opam admin upgrade'" && \
   sudo -u opam sh -c "opam init -a -y --comp ocaml-base-compiler.4.03.0 /home/opam/opam-repository" && \
   sudo -u opam sh -c "opam install -y depext travis-opam"
 ENTRYPOINT [ "opam", "config", "exec", "--" ]
