@@ -7,7 +7,7 @@ RUN apt-get -y update && \
   DEBIAN_FRONTEND=noninteractive apt-get -y install aspcud && \
   git clone -b master git://github.com/ocaml/opam /tmp/opam && \
   git -C /tmp/opam checkout 425682dc80d260b511072cadee06b314a9b53213 && \
-  sh -c "cd /tmp/opam && make cold && make cold-install && mkdir -p /usr/local/share/opam && cp shell/wrap-build.sh /usr/local/share/opam && echo 'wrap-build-commands: \"/usr/local/share/opam/wrap-build.sh\"' >> /etc/opamrc.userns && cp shell/wrap-install.sh /usr/local/share/opam && echo 'wrap-install-commands: \"/usr/local/share/opam/wrap-install.sh\"' >> /etc/opamrc.userns && cp shell/wrap-remove.sh /usr/local/share/opam && echo 'wrap-remove-commands: \"/usr/local/share/opam/wrap-remove.sh\"' >> /etc/opamrc.userns && rm -rf /tmp/opam" && \
+  sh -c "cd /tmp/opam && make cold && make install && mkdir -p /usr/local/share/opam && cp shell/wrap-build.sh /usr/local/share/opam && echo 'wrap-build-commands: \"/usr/local/share/opam/wrap-build.sh\"' >> /etc/opamrc.userns && cp shell/wrap-install.sh /usr/local/share/opam && echo 'wrap-install-commands: \"/usr/local/share/opam/wrap-install.sh\"' >> /etc/opamrc.userns && cp shell/wrap-remove.sh /usr/local/share/opam && echo 'wrap-remove-commands: \"/usr/local/share/opam/wrap-remove.sh\"' >> /etc/opamrc.userns && rm -rf /tmp/opam" && \
   echo 'opam ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/opam && \
   chmod 440 /etc/sudoers.d/opam && \
   chown root:root /etc/sudoers.d/opam && \
